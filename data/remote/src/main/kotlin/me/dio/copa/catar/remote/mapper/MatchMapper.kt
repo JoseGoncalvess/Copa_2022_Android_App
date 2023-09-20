@@ -19,6 +19,8 @@ fun MatchRemote.toDomain(): MatchDomain {
         team1 = team1.toTeam(),
         team2 = team2.toTeam(),
         stadium = stadium.toDomain(),
+        //Caos queira usar a notificação em temporreal + plus[tempo antes de notificar]
+        //date = date.toLocalDateTime.now().plusMinute(3),
         date = date.toLocalDateTime(),
     )
 }
